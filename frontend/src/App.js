@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     async function loadReport() {
-      const res = await axios.get("http://localhost:5000/embed-config");
+      const res = await axios.get("https://power-bi-embedded-dashboard.onrender.com/embed-config");
 
       const embedConfig = {
         type: "report",
